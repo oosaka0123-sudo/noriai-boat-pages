@@ -7,6 +7,7 @@
   <title>東丸（あずま丸）｜乗合船 公式サイト</title>
   <meta name="description" content="東丸（あずま丸）の乗合船公式サイト。出船予定、釣りプラン、料金、予約方法をご案内します。">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site-enhancements.css">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -15,7 +16,9 @@
       <span class="brand-mark">東丸</span>
       <span class="brand-name">乗合船 <strong>東丸（あずま丸）</strong></span>
     </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">MENU</button>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+      <span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">MENU</span>
+    </button>
     <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
       <a href="#schedule">出船予定</a>
       <a href="#plans">釣りプラン</a>
