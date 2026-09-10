@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06131f">
+  <title>釣果情報｜東丸（あずま丸）</title>
+  <meta name="description" content="東丸（あずま丸）の最新釣果。LINEから届いた写真と釣果をスピーディーに掲載し、過去の釣果やInstagram・Facebookの更新もまとめて確認できます。">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="catches.css">
+  <script defer src="script.js"></script>
+  <script defer src="catches.js"></script>
+</head>
+<body class="catches-page">
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="東丸トップへ">
+      <span class="brand-mark">東丸</span>
+      <span class="brand-name">乗合船 <strong>東丸（あずま丸）</strong></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+      <span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">MENU</span>
+    </button>
+    <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="index.html#plans">釣りプラン</a>
+      <a href="catches.html" aria-current="page">釣果情報</a>
+      <a href="index.html#access">アクセス</a>
+      <a class="nav-cta" href="reservation.html">予約する</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catch-hero">
+      <div class="catch-hero-grid"></div>
+      <div class="catch-shell catch-hero-inner">
+        <p class="catch-kicker">DAILY CATCH / AZUMAMARU</p>
+        <h1>今日の海を、<br><em>その日のうちに。</em></h1>
+        <p class="catch-lead">東丸の最新釣果を写真中心で更新。スマホで見た瞬間に「今日は何が釣れた？」が分かるページです。</p>
+        <div class="catch-hero-status">
+          <span class="live-dot"></span>
+          <div><small>LATEST UPDATE</small><strong id="latest-update-label">釣果情報を確認中</strong></div>
+        </div>
+        <a class="catch-scroll" href="#latest"><span>SCROLL</span><i>↓</i></a>
+      </div>
+    </section>
+
+    <section class="catch-shell catch-latest" id="latest">
+      <div class="catch-heading split">
+        <div><span>LATEST CATCH</span><h2>最新の釣果</h2></div>
+        <p>写真・魚種・サイズ・匹数など、届いた情報を見やすく整理して掲載します。未入力の項目は無理に表示しません。</p>
+      </div>
+
+      <div id="latest-catches" class="catch-grid" aria-live="polite">
+        <article class="catch-card catch-card-loading">
+          <div class="catch-photo-placeholder"><span>LOADING</span></div>
+          <div class="catch-card-body"><small>最新情報を読み込み中</small><h3>東丸の釣果情報</h3><p>公開された釣果がここへ自動表示されます。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="catch-system-section">
+      <div class="catch-shell">
+        <div class="catch-heading light">
+          <span>ONE INPUT, EVERYWHERE</span>
+          <h2>毎日の更新は、LINEに送るだけ。</h2>
+          <p>釣果更新を仕事にしないための仕組み。船長は普段使うLINEだけで完結し、サイト側で情報を資産として残します。</p>
+        </div>
+
+        <div class="update-flow" aria-label="釣果情報の更新フロー">
+          <article class="flow-card flow-line">
+            <div class="flow-number">01</div>
+            <div class="flow-icon">LINE</div>
+            <h3>写真＋本文を送る</h3>
+            <p>釣行後に写真を数枚送り、続けて「ブリ3本、最大82cm」など一言送信。</p>
+            <small>船長の操作：約30秒</small>
+          </article>
+          <div class="flow-arrow">→</div>
+          <article class="flow-card">
+            <div class="flow-number">02</div>
+            <div class="flow-icon">CHECK</div>
+            <h3>LINE内で確認</h3>
+            <p>Botが下書きを返信。内容を見て［公開］または［削除］をタップ。</p>
+            <small>管理画面を開かない</small>
+          </article>
+          <div class="flow-arrow">→</div>
+          <article class="flow-card flow-main">
+            <div class="flow-number">03</div>
+            <div class="flow-icon">WEB</div>
+            <h3>サイトへ即反映</h3>
+            <p>トップページと釣果一覧を同時更新。写真も本文も東丸のDBへ保存。</p>
+            <small>サイトを正本にする</small>
+          </article>
+          <div class="flow-arrow">→</div>
+          <article class="flow-card">
+            <div class="flow-number">04</div>
+            <div class="flow-icon">SNS</div>
+            <h3>SNSで広げる</h3>
+            <p>Instagram・Facebookはサイト内にも表示。将来は同じ釣果から自動投稿も可能。</p>
+            <small>SNS障害でも釣果は残る</small>
+          </article>
+        </div>
+
+        <div class="system-core">
+          <div class="core-copy">
+            <span class="core-label">採用方針</span>
+            <h3>LINEは「入口」。<br>東丸サイトが「本体」。</h3>
+            <p>SNSだけを情報源にすると、仕様変更やAPI障害で表示できなくなる可能性があります。そこで釣果データと写真は東丸側に保存し、Instagram・Facebookは拡散とコミュニティの役割に分けます。</p>
+          </div>
+          <div class="core-diagram" aria-hidden="true">
+            <div class="core-node input">LINE<span>INPUT</span></div><i>→</i>
+            <div class="core-node database">東丸 DB<span>MASTER</span></div><i>→</i>
+            <div class="core-output"><div>WEB</div><div>Instagram</div><div>Facebook</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catch-shell archive-section" id="archive">
+      <div class="catch-heading split">
+        <div><span>ARCHIVE</span><h2>過去の釣果も、探しやすく。</h2></div>
+        <p>毎日の投稿を流して終わりにせず、魚種・月・シーズンで探せる「釣れる時期の記録」に育てます。</p>
+      </div>
+      <div class="filter-bar" aria-label="釣果絞り込み">
+        <button type="button" class="filter-chip is-active" data-filter="all">すべて</button>
+        <button type="button" class="filter-chip" data-filter="青物">青物</button>
+        <button type="button" class="filter-chip" data-filter="タチウオ">タチウオ</button>
+        <button type="button" class="filter-chip" data-filter="タイ">タイ</button>
+        <button type="button" class="filter-chip" data-filter="その他">その他</button>
+      </div>
+      <div id="catch-archive" class="archive-grid">
+        <div class="empty-state"><span>ARCHIVE</span><strong>釣果が公開されると自動で蓄積されます。</strong><p>魚種タグと日付で絞り込めるようにします。</p></div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="catch-shell">
+        <div class="catch-heading light split">
+          <div><span>SOCIAL</span><h2>海の続きを、SNSでも。</h2></div>
+          <p>Instagramは写真・動画、Facebookはお知らせやコミュニティ。サイトと役割を分けて、全部を東丸の入口にします。</p>
+        </div>
+        <div class="social-grid">
+          <article class="social-card instagram-card">
+            <div class="social-top"><span>Instagram</span><small>PHOTO / REELS</small></div>
+            <div class="social-preview"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <h3>釣れた瞬間を、もっと近く。</h3>
+            <p>東丸のInstagramアカウント確定後、公式投稿の埋め込みまたは最新投稿への導線を設定します。</p>
+            <span class="social-pending">アカウント連携待ち</span>
+          </article>
+          <article class="social-card facebook-card">
+            <div class="social-top"><span>Facebook</span><small>NEWS / COMMUNITY</small></div>
+            <div class="facebook-lines"><i></i><i></i><i></i><b></b></div>
+            <h3>出船情報とお知らせをまとめて。</h3>
+            <p>Facebookページ確定後、公式ページの投稿・フォロー導線をこの枠へ接続します。</p>
+            <span class="social-pending">ページ連携待ち</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="catch-shell feature-section">
+      <div class="catch-heading"><span>SMART FEATURES</span><h2>毎日の釣果を、予約につなげる。</h2></div>
+      <div class="feature-grid">
+        <article><b>01</b><h3>トップ自動反映</h3><p>最新1〜3件をホームへ自動表示。</p></article>
+        <article><b>02</b><h3>魚種タグ</h3><p>青物・タイなどを絞り込み可能に。</p></article>
+        <article><b>03</b><h3>複数写真</h3><p>1釣行の写真をギャラリー表示。</p></article>
+        <article><b>04</b><h3>予約CTA</h3><p>釣果を見た勢いで空席確認へ。</p></article>
+        <article><b>05</b><h3>月別アーカイブ</h3><p>シーズンの実績が自然に蓄積。</p></article>
+        <article><b>06</b><h3>OG画像</h3><p>共有時に釣果写真を大きく表示。</p></article>
+      </div>
+    </section>
+
+    <section class="catch-reserve-cta">
+      <div class="catch-shell cta-inner"><div><span>NEXT TRIP</span><h2>この釣果を見たら、<br>次はあなたの番。</h2></div><a href="reservation.html">予約・空席を確認する <i>→</i></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark">東丸</span><strong>乗合船 東丸（あずま丸）</strong></div>
+    <p>© <span id="year"></span> AZUMAMARU. All rights reserved.</p>
+  </footer>
+</body>
+</html>

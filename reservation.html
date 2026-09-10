@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071827">
+  <title>予約システムの選び方｜東丸（あずま丸）</title>
+  <meta name="description" content="東丸（あずま丸）の予約システム候補を3択で直感的に比較。外部予約サービス、ロリポップ完全自作、ロリポップ＋外部決済の違いとおすすめ方針を分かりやすく図解します。">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reservation.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="reservation-page">
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="東丸トップへ">
+      <span class="brand-mark">東丸</span>
+      <span class="brand-name">乗合船 <strong>東丸（あずま丸）</strong></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">MENU</button>
+    <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+      <a href="index.html#schedule">出船予定</a>
+      <a href="index.html#plans">釣りプラン</a>
+      <a href="index.html#boat">船・船長</a>
+      <a href="index.html#access">アクセス</a>
+      <a class="nav-cta" href="reservation.html" aria-current="page">予約</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reservation-hero">
+      <div class="reservation-hero-glow"></div>
+      <div class="reservation-shell reservation-hero-inner">
+        <div class="reservation-kicker">RESERVATION SYSTEM / 3 CHOICES</div>
+        <p class="reservation-overline">東丸（あずま丸）予約システム</p>
+        <h1>予約システムは、<br><em>3択</em>で考えると分かりやすい。</h1>
+        <p class="reservation-lead">「早く始める」「全部自由に作る」「自由度と安全性を両立する」。東丸の予約システムは、現在この3つの方向から選べます。</p>
+        <div class="hero-choice-strip" aria-label="予約システム3択">
+          <a href="#choice-1"><b>01</b><span>外部サービス</span></a>
+          <span class="choice-strip-arrow">→</span>
+          <a href="#choice-2"><b>02</b><span>完全自作</span></a>
+          <span class="choice-strip-arrow">→</span>
+          <a href="#choice-3" class="is-best"><b>03</b><span>自作＋外部決済</span><small>おすすめ</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-shell intro-section">
+      <div class="reservation-section-heading">
+        <span>AT A GLANCE</span>
+        <h2>まずは、3秒で違いをつかむ。</h2>
+        <p>難しい技術の話を先に読む必要はありません。最初に見るべき違いは「速さ」「自由度」「安全性」の3つです。</p>
+      </div>
+      <div class="three-axis" aria-label="3案の特徴比較">
+        <article>
+          <span class="axis-icon">⚡</span>
+          <b>すぐ始めたい</b>
+          <p>外部予約サービス</p>
+          <strong>①</strong>
+        </article>
+        <article>
+          <span class="axis-icon">🛠</span>
+          <b>全部自由にしたい</b>
+          <p>ロリポップ完全自作</p>
+          <strong>②</strong>
+        </article>
+        <article class="axis-best">
+          <span class="axis-icon">⚓</span>
+          <b>自由度も安全性も欲しい</b>
+          <p>ロリポップ＋外部決済</p>
+          <strong>③</strong>
+          <i>BEST</i>
+        </article>
+      </div>
+    </section>
+
+    <section class="reservation-shell choices-section" id="choices">
+      <div class="reservation-section-heading">
+        <span>THREE OPTIONS</span>
+        <h2>東丸の予約システム、3つの選択肢。</h2>
+      </div>
+
+      <div class="choice-grid">
+        <article class="choice-card" id="choice-1">
+          <div class="choice-head">
+            <span class="choice-number">01</span>
+            <div>
+              <p>FAST START</p>
+              <h3>外部予約サービスを使う</h3>
+              <small>例：fishbank など</small>
+            </div>
+          </div>
+          <div class="choice-visual" aria-hidden="true">
+            <div class="visual-calendar"><span></span><span></span><span></span><b>予約</b></div>
+            <div class="visual-connector">↗</div>
+            <div class="visual-cloud">SaaS</div>
+          </div>
+          <div class="choice-score">
+            <div><span>導入速度</span><b>★★★★★</b></div>
+            <div><span>自由度</span><b>★★☆☆☆</b></div>
+            <div><span>保守の軽さ</span><b>★★★★★</b></div>
+          </div>
+          <ul class="choice-list">
+            <li class="plus">すぐに予約受付を始めやすい</li>
+            <li class="plus">初期の開発・保守負担が小さい</li>
+            <li class="minus">月額費用やサービス手数料が発生する</li>
+            <li class="minus">東丸独自の画面・細かな運用には制限が出やすい</li>
+          </ul>
+          <div class="choice-fit"><span>こんな場合に</span><strong>「まず最短で予約受付を始めたい」</strong></div>
+        </article>
+
+        <article class="choice-card" id="choice-2">
+          <div class="choice-head">
+            <span class="choice-number">02</span>
+            <div>
+              <p>FULL CUSTOM</p>
+              <h3>ロリポップで完全自作</h3>
+              <small>PHP + MySQL + 独自管理画面</small>
+            </div>
+          </div>
+          <div class="choice-visual choice-visual-code" aria-hidden="true">
+            <div class="visual-laptop"><span>&lt;/&gt;</span></div>
+            <div class="visual-tool">＋</div>
+            <div class="visual-db">DB</div>
+          </div>
+          <div class="choice-score">
+            <div><span>導入速度</span><b>★★☆☆☆</b></div>
+            <div><span>自由度</span><b>★★★★★</b></div>
+            <div><span>保守の軽さ</span><b>★★☆☆☆</b></div>
+          </div>
+          <ul class="choice-list">
+            <li class="plus">画面も機能も東丸専用にできる</li>
+            <li class="plus">残席・貸切・電話予約など独自運用を作り込める</li>
+            <li class="minus">開発と保守の負担が大きくなる</li>
+            <li class="minus">クレジットカード決済まで自作するのはおすすめしない</li>
+          </ul>
+          <div class="choice-fit"><span>こんな場合に</span><strong>「独自性を何より優先したい」</strong></div>
+        </article>
+
+        <article class="choice-card choice-card-best" id="choice-3">
+          <div class="best-ribbon">東丸 推奨</div>
+          <div class="choice-head">
+            <span class="choice-number">03</span>
+            <div>
+              <p>BEST BALANCE</p>
+              <h3>ロリポップ＋外部決済</h3>
+              <small>予約は東丸専用 / 決済は専門サービス</small>
+            </div>
+          </div>
+          <div class="choice-visual choice-visual-hybrid" aria-hidden="true">
+            <div class="visual-laptop"><span>東丸</span></div>
+            <div class="visual-tool">＋</div>
+            <div class="visual-payment">CARD<small>SAFE</small></div>
+          </div>
+          <div class="choice-score">
+            <div><span>導入速度</span><b>★★★★☆</b></div>
+            <div><span>自由度</span><b>★★★★★</b></div>
+            <div><span>安全性</span><b>★★★★★</b></div>
+          </div>
+          <ul class="choice-list">
+            <li class="plus">予約・残席・乗船者名簿は東丸専用にできる</li>
+            <li class="plus">決済はStripe等の専門サービスへ安全に任せられる</li>
+            <li class="plus">東丸らしい見た目と使いやすさを両立できる</li>
+            <li class="plus">LINE通知・キャンセル待ちなど将来の拡張にも強い</li>
+          </ul>
+          <div class="choice-fit choice-fit-best"><span>東丸なら</span><strong>「本命の運用を長く育てたい」</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="decision-section">
+      <div class="reservation-shell">
+        <div class="reservation-section-heading light-heading">
+          <span>QUICK DECISION</span>
+          <h2>迷ったら、この順番で決める。</h2>
+        </div>
+        <div class="decision-flow">
+          <article><span>STEP 1</span><b>今すぐ必要？</b><p>YESなら①が最速。</p></article>
+          <i>→</i>
+          <article><span>STEP 2</span><b>東丸専用にしたい？</b><p>YESなら②か③へ。</p></article>
+          <i>→</i>
+          <article><span>STEP 3</span><b>決済の安全性も重視？</b><p>YESなら③。</p></article>
+          <i>→</i>
+          <article class="decision-final"><span>ANSWER</span><b>③ ハイブリッド</b><p>自由度 × 安全性 × 将来性</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-shell compare-section">
+      <div class="reservation-section-heading">
+        <span>COMPARISON</span>
+        <h2>横に並べると、③のバランスが見える。</h2>
+      </div>
+      <div class="compare-table-wrap" role="region" aria-label="予約システム比較表" tabindex="0">
+        <table class="compare-table">
+          <thead>
+            <tr><th>比較項目</th><th>① 外部サービス</th><th>② 完全自作</th><th class="compare-best">③ 自作＋外部決済<br><small>おすすめ</small></th></tr>
+          </thead>
+          <tbody>
+            <tr><th>導入スピード</th><td><span class="rating-high">◎</span> 最速</td><td><span class="rating-low">△</span> 時間が必要</td><td class="compare-best"><span class="rating-mid">○</span> 現実的</td></tr>
+            <tr><th>東丸専用デザイン</th><td><span class="rating-low">△</span> 制限あり</td><td><span class="rating-high">◎</span> 自由</td><td class="compare-best"><span class="rating-high">◎</span> 自由</td></tr>
+            <tr><th>乗合・残席管理</th><td><span class="rating-mid">○</span> サービス次第</td><td><span class="rating-high">◎</span> 専用設計</td><td class="compare-best"><span class="rating-high">◎</span> 専用設計</td></tr>
+            <tr><th>電話予約の手動追加</th><td><span class="rating-mid">○</span> サービス次第</td><td><span class="rating-high">◎</span> 自由</td><td class="compare-best"><span class="rating-high">◎</span> 自由</td></tr>
+            <tr><th>乗船者名簿</th><td><span class="rating-mid">○</span> サービス次第</td><td><span class="rating-high">◎</span> 専用設計</td><td class="compare-best"><span class="rating-high">◎</span> 専用設計</td></tr>
+            <tr><th>決済の安全性</th><td><span class="rating-high">◎</span> 任せられる</td><td><span class="rating-low">△</span> 自前責任</td><td class="compare-best"><span class="rating-high">◎</span> 専門サービス</td></tr>
+            <tr><th>月額固定費</th><td><span class="rating-low">△</span> 発生しやすい</td><td><span class="rating-high">◎</span> 抑えやすい</td><td class="compare-best"><span class="rating-high">◎</span> 抑えやすい</td></tr>
+            <tr><th>将来の拡張</th><td><span class="rating-mid">○</span> 制約あり</td><td><span class="rating-high">◎</span> 強い</td><td class="compare-best"><span class="rating-high">◎</span> 強い</td></tr>
+            <tr class="total-row"><th>東丸との総合相性</th><td>○</td><td>○〜◎</td><td class="compare-best"><strong>◎ 最善案</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="reservation-shell architecture-section">
+      <div class="architecture-copy">
+        <span class="architecture-label">RECOMMENDED ARCHITECTURE</span>
+        <h2>③なら「東丸らしさ」と「安全」を分けて考えられる。</h2>
+        <p>お客様が触る予約画面、残席管理、乗船者名簿、船長用の管理画面は東丸専用。クレジットカード情報のように高度な安全管理が必要な部分だけを専門サービスへ任せます。</p>
+      </div>
+      <div class="architecture-diagram" aria-label="おすすめ予約システム構成図">
+        <div class="arch-node arch-user"><span>01</span><b>お客様</b><small>スマホから予約</small></div>
+        <i>→</i>
+        <div class="arch-node arch-main"><span>02</span><b>東丸 予約画面</b><small>日付・便・人数・残席</small></div>
+        <i>→</i>
+        <div class="arch-node arch-server"><span>03</span><b>ロリポップ</b><small>PHP + MySQL</small></div>
+        <div class="arch-split">
+          <i>↙</i><i>↘</i>
+        </div>
+        <div class="arch-bottom">
+          <div class="arch-node"><span>04</span><b>船長管理画面</b><small>名簿・電話予約・欠航</small></div>
+          <div class="arch-node arch-safe"><span>05</span><b>外部決済</b><small>Stripe等 / カード情報は保持しない</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-shell operation-section">
+      <div class="reservation-section-heading">
+        <span>WHAT WE CAN BUILD</span>
+        <h2>③を選んだ場合、ここまで東丸専用にできる。</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span>空</span><h3>空席・残席</h3><p>◎空きあり / △残りわずか / ×満船 / 休船を見やすく表示。</p></article>
+        <article><span>乗</span><h3>乗合・貸切</h3><p>乗合便とチャーターを同じカレンダーで管理。</p></article>
+        <article><span>電</span><h3>電話予約</h3><p>船長がスマホから手動追加し、Web残席へ即反映。</p></article>
+        <article><span>名</span><h3>乗船者名簿</h3><p>予約情報と名簿をつなぎ、管理の二度手間を減らす。</p></article>
+        <article><span>欠</span><h3>荒天・欠航</h3><p>欠航変更から対象予約者への通知につなげる。</p></article>
+        <article><span>前</span><h3>前日通知</h3><p>集合時間・場所・注意事項を前日に自動送信。</p></article>
+        <article><span>待</span><h3>キャンセル待ち</h3><p>満船後の空席発生を次のお客様へつなげる。</p></article>
+        <article><span>拡</span><h3>将来拡張</h3><p>LINE連携、会員、乗船履歴、ポイントなどを段階追加。</p></article>
+      </div>
+    </section>
+
+    <section class="reservation-shell final-recommendation">
+      <div class="final-icon">03</div>
+      <div>
+        <p class="reservation-overline">CURRENT RECOMMENDATION</p>
+        <h2>東丸の本命は、<br>「ロリポップ＋外部決済」。</h2>
+        <p>外部サービスだけに縛られず、決済の安全まで全部抱え込まない。その中間が、東丸にとっていちばん実用的です。予約システムそのものを東丸の資産として育てていけます。</p>
+        <div class="final-tags"><span>独自UI</span><span>低ランニングコスト</span><span>安全な決済</span><span>将来拡張</span></div>
+      </div>
+    </section>
+
+    <section class="reservation-shell reservation-next">
+      <p class="reservation-overline">NEXT STEP</p>
+      <h2>次は、実際の予約画面へ。</h2>
+      <p>採用方式が決まったら、日付・釣り物・人数・残席・お客様情報を入力する本番の予約UIへ進みます。</p>
+      <div class="reservation-next-actions">
+        <a class="button button-primary" href="#choice-3">おすすめ案をもう一度見る</a>
+        <a class="button button-ghost" href="index.html">東丸トップへ戻る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark">東丸</span><strong>乗合船 東丸（あずま丸）</strong></div>
+    <p>© <span id="year"></span> Azumamaru. All rights reserved.</p>
+  </footer>
+</body>
+</html>

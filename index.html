@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071827">
+  <title>乗合船｜公式サイト</title>
+  <meta name="description" content="初心者からベテランまで楽しめる乗合船。出船予定、釣りプラン、料金、予約方法をご案内します。">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="トップへ">
+      <span class="brand-mark">BOAT</span>
+      <span class="brand-name">乗合船 <strong>船名未設定</strong></span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">MENU</button>
+    <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+      <a href="#schedule">出船予定</a>
+      <a href="#plans">釣りプラン</a>
+      <a href="#boat">船・船長</a>
+      <a href="#access">アクセス</a>
+      <a class="nav-cta" href="#reserve">予約する</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">FISHING CHARTER / NORIAI</p>
+        <h1>海へ出る朝を、<br>もっと楽しみに。</h1>
+        <p class="hero-lead">初心者も常連も、狙う魚は本気。乗合船ならではの気軽さと、船長の経験で最高の一日へ。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#reserve">空きを見て予約</a>
+          <a class="button button-ghost" href="#plans">今日狙える魚を見る</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="本日の出船情報">
+        <span class="status-dot"></span>
+        <div>
+          <small>TODAY</small>
+          <strong>出船情報は準備中</strong>
+          <span>最新情報をここに表示予定</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info section-shell" id="schedule">
+      <div class="section-heading">
+        <p class="eyebrow">SAILING INFO</p>
+        <h2>迷わず乗れる、分かりやすい乗合船。</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-number">01</span>
+          <h3>出船予定</h3>
+          <p>対象魚・集合時間・空き状況をスマホでひと目で確認できる構成にします。</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">02</span>
+          <h3>料金が明快</h3>
+          <p>乗船料金、レンタル、氷・エサなど追加費用まで分かりやすく整理します。</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">03</span>
+          <h3>予約が早い</h3>
+          <p>電話・LINE・予約フォームなど、運用に合わせて最短で予約できる導線にします。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="plans section-shell" id="plans">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">FISHING PLANS</p>
+          <h2>季節のターゲットへ。</h2>
+        </div>
+        <p>魚種や季節に合わせてカードを差し替えられる設計です。料金・時間・難易度もまとめて表示できます。</p>
+      </div>
+      <div class="plan-grid">
+        <article class="plan-card plan-card-featured">
+          <div class="plan-meta"><span>SEASON</span><span>おすすめ</span></div>
+          <h3>旬のおすすめ便</h3>
+          <p>その時期に一番狙いたいターゲットを大きく見せるメインプラン。</p>
+          <a href="#reserve">詳細・予約へ →</a>
+        </article>
+        <article class="plan-card">
+          <div class="plan-meta"><span>PLAN 02</span><span>初心者OK</span></div>
+          <h3>近海ライト便</h3>
+          <p>道具レンタルにも対応しやすい、初めての方に案内しやすいプラン。</p>
+          <a href="#reserve">詳細・予約へ →</a>
+        </article>
+        <article class="plan-card">
+          <div class="plan-meta"><span>PLAN 03</span><span>経験者向け</span></div>
+          <h3>本気のターゲット便</h3>
+          <p>常連・経験者向けの専門性が高い釣行プランを掲載できます。</p>
+          <a href="#reserve">詳細・予約へ →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="boat section-shell" id="boat">
+      <div class="boat-visual" role="img" aria-label="船の写真を配置するエリア">
+        <span>BOAT PHOTO</span>
+      </div>
+      <div class="boat-copy">
+        <p class="eyebrow">BOAT & CAPTAIN</p>
+        <h2>釣らせるための船と、安心して任せられる船長。</h2>
+        <p>船の設備、定員、トイレ、キャビン、レンタルタックル、船長プロフィールなどをここに整理します。</p>
+        <dl class="spec-list">
+          <div><dt>定員</dt><dd>未設定</dd></div>
+          <div><dt>設備</dt><dd>未設定</dd></div>
+          <div><dt>レンタル</dt><dd>未設定</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="access section-shell" id="access">
+      <div class="section-heading">
+        <p class="eyebrow">ACCESS</p>
+        <h2>集合場所まで、迷わせない。</h2>
+      </div>
+      <div class="access-grid">
+        <div class="map-placeholder">MAP</div>
+        <div class="access-copy">
+          <h3>出船港・集合場所</h3>
+          <p>住所未設定</p>
+          <p>駐車場や集合時刻、目印、乗船場所までの歩き方も掲載できます。</p>
+          <a class="text-link" href="#reserve">予約前の確認事項を見る →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve section-shell" id="reserve">
+      <p class="eyebrow">RESERVATION</p>
+      <h2>次の休み、海へ。</h2>
+      <p>予約方法は船宿の運用に合わせて設定します。電話・LINE・Web予約に対応可能です。</p>
+      <div class="reserve-actions">
+        <a class="button button-light" href="#top">LINE予約（準備中）</a>
+        <a class="button button-outline-light" href="#top">電話する（準備中）</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <span class="brand-mark">BOAT</span>
+      <strong>乗合船 船名未設定</strong>
+    </div>
+    <p>© <span id="year"></span> Noriai Boat. All rights reserved.</p>
+  </footer>
+</body>
+</html>
