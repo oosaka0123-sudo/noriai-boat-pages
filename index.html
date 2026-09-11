@@ -25,7 +25,7 @@
         <a href="#boat">船について</a>
       </nav>
       <div class="site-header__actions">
-        <a class="header-cta" href="#schedule">空席確認</a>
+        <a class="header-cta" href="reservation.html">空席確認</a>
         <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navOverlay" aria-label="メニューを開く">
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
@@ -42,7 +42,7 @@
       <a href="#catch">釣果</a>
       <a href="#first-timer">はじめての方へ</a>
       <a href="#boat">船について</a>
-      <a href="#reserve">ご予約について</a>
+      <a href="reservation.html">ご予約</a>
     </nav>
   </noscript>
 
@@ -54,7 +54,7 @@
         <li><a href="#catch"><span class="nav-overlay__num">02</span>釣果</a></li>
         <li><a href="#boat"><span class="nav-overlay__num">03</span>船について</a></li>
       </ol>
-      <a class="nav-overlay__cta" href="#schedule">空席確認</a>
+      <a class="nav-overlay__cta" href="reservation.html">空席確認</a>
     </div>
   </nav>
 
@@ -85,21 +85,13 @@
       <h2 id="schedule-title" class="reveal-mask"><span>出船予定・空席情報。</span></h2>
       <p class="section-lead reveal">ご予約・空席確認システムとの連携を準備しています。公開まで、このページで概要のみお知らせします。</p>
       <ul class="ledger">
-        <li class="reveal">
-          <span class="ledger__label">直近の出船予定</span>
-          <span class="ledger__status">準備中</span>
-        </li>
-        <li class="reveal" style="--reveal-delay:.08s">
-          <span class="ledger__label">空席情報</span>
-          <span class="ledger__status">予約システム連携予定</span>
-        </li>
+        <li class="reveal"><span class="ledger__label">直近の出船予定</span><span class="ledger__status">準備中</span></li>
+        <li class="reveal" style="--reveal-delay:.08s"><span class="ledger__label">空席情報</span><span class="ledger__status">予約システム連携予定</span></li>
       </ul>
     </section>
 
     <section class="section voyage" id="voyage" aria-labelledby="voyage-title">
-      <video class="voyage__video bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-        <source src="media/deck-sea.mp4" type="video/mp4">
-      </video>
+      <video class="voyage__video bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/deck-sea.mp4" type="video/mp4"></video>
       <div class="voyage__scrim" aria-hidden="true"></div>
       <div class="voyage__content reveal">
         <p class="section-label section-label--light">02 — ON BOARD</p>
@@ -110,25 +102,16 @@
 
     <section class="section catch" id="catch" aria-labelledby="catch-title">
       <div class="section-head">
-        <div>
-          <p class="section-label reveal">03 — LATEST CATCH</p>
-          <h2 id="catch-title" class="reveal-mask"><span>釣果イメージ。</span></h2>
-        </div>
+        <div><p class="section-label reveal">03 — LATEST CATCH</p><h2 id="catch-title" class="reveal-mask"><span>釣果イメージ。</span></h2></div>
         <p class="section-note reveal">※ 掲載写真はイメージ生成によるサンプルです。実際の東丸の釣果・魚種を示すものではありません。</p>
       </div>
       <div class="catch-grid catch-grid--samples">
         <article class="catch-card reveal-img">
-          <div class="catch-card__visual">
-            <img src="media/catch-sample-01.webp" alt="青物を手にした釣果イメージのサンプル" loading="lazy">
-            <span class="catch-card__tag">SAMPLE</span>
-          </div>
+          <div class="catch-card__visual"><img src="media/catch-sample-01.jpg" alt="青物を手にした釣果イメージのサンプル" loading="lazy"><span class="catch-card__tag">SAMPLE</span></div>
           <p class="catch-card__caption">釣果イメージ（サンプル）01</p>
         </article>
         <article class="catch-card reveal-img" style="--reveal-delay:.08s">
-          <div class="catch-card__visual">
-            <img src="media/catch-sample-02.webp" alt="クーラーボックスに並んだ釣果イメージのサンプル" loading="lazy">
-            <span class="catch-card__tag">SAMPLE</span>
-          </div>
+          <div class="catch-card__visual"><img src="media/catch-sample-02.jpg" alt="クーラーボックスに並んだ釣果イメージのサンプル" loading="lazy"><span class="catch-card__tag">SAMPLE</span></div>
           <p class="catch-card__caption">釣果イメージ（サンプル）02</p>
         </article>
       </div>
@@ -136,10 +119,7 @@
 
     <section class="section first-timer" id="first-timer" aria-labelledby="first-timer-title">
       <div class="first-timer__grid">
-        <div class="reveal">
-          <p class="section-label">04 — FOR FIRST-TIMERS</p>
-          <h2 id="first-timer-title" class="reveal-mask"><span>はじめての海でも。</span></h2>
-        </div>
+        <div class="reveal"><p class="section-label">04 — FOR FIRST-TIMERS</p><h2 id="first-timer-title" class="reveal-mask"><span>はじめての海でも。</span></h2></div>
         <ul class="assurance-list">
           <li class="reveal">わからないことは、乗ってから聞けばいい。</li>
           <li class="reveal" style="--reveal-delay:.06s">必要なものは、少しずつ覚えていけばいい。</li>
@@ -153,31 +133,20 @@
       <h2 id="boat-title" class="reveal-mask"><span>船について。</span></h2>
       <p class="section-lead reveal">詳しい仕様・設備の情報は、準備が整い次第このページに掲載します。ここでは、東丸が大切にしている考え方だけをお伝えします。</p>
       <ul class="boat-list">
-        <li class="reveal">
-          <span class="boat-list__label">乗る前の説明</span>
-          <p class="boat-list__desc">道具の扱いも、船の上の過ごし方も、乗ってから一つずつ。</p>
-        </li>
-        <li class="reveal" style="--reveal-delay:.08s">
-          <span class="boat-list__label">海の状況判断</span>
-          <p class="boat-list__desc">その日の海を見てから決める。無理をしないことを、いちばんに。</p>
-        </li>
-        <li class="reveal" style="--reveal-delay:.16s">
-          <span class="boat-list__label">詳細情報</span>
-          <p class="boat-list__desc">船体・定員・装備などの詳細は準備中です。公開まで今しばらくお待ちください。</p>
-        </li>
+        <li class="reveal"><span class="boat-list__label">乗る前の説明</span><p class="boat-list__desc">道具の扱いも、船の上の過ごし方も、乗ってから一つずつ。</p></li>
+        <li class="reveal" style="--reveal-delay:.08s"><span class="boat-list__label">海の状況判断</span><p class="boat-list__desc">その日の海を見てから決める。無理をしないことを、いちばんに。</p></li>
+        <li class="reveal" style="--reveal-delay:.16s"><span class="boat-list__label">詳細情報</span><p class="boat-list__desc">船体・定員・装備などの詳細は準備中です。公開まで今しばらくお待ちください。</p></li>
       </ul>
     </section>
 
     <section class="section reserve" id="reserve" aria-labelledby="reserve-title">
-      <video class="reserve__video bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-        <source src="media/sunset-return.mp4" type="video/mp4">
-      </video>
+      <video class="reserve__video bg-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"><source src="media/sunset-return.mp4" type="video/mp4"></video>
       <div class="reserve__scrim" aria-hidden="true"></div>
       <div class="reserve__content reveal">
         <p class="eyebrow eyebrow--light">06 — RESERVATION</p>
         <h2 id="reserve-title">次の出船へ、<br>心の準備を。</h2>
         <p class="reserve__lead">ご予約システムは現在準備中です。公開まで、今しばらくお待ちください。</p>
-        <button type="button" class="cta-button" id="reserveDemoBtn">空席確認について見る</button>
+        <a class="cta-button" href="reservation.html">空席確認・予約へ</a>
         <p class="form-status" id="reserveStatus" role="status" aria-live="polite"></p>
       </div>
     </section>
@@ -185,17 +154,8 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <a class="brand brand--footer" href="#top" aria-label="AZUMAMARU トップへ戻る">
-        <span class="brand__jp">東丸</span>
-        <span class="brand__en">AZUMAMARU</span>
-      </a>
-      <nav class="footer-nav" aria-label="フッターナビゲーション">
-        <a href="#schedule">出船予定</a>
-        <a href="#catch">釣果</a>
-        <a href="#first-timer">はじめての方へ</a>
-        <a href="#boat">船について</a>
-        <a href="#reserve">ご予約について</a>
-      </nav>
+      <a class="brand brand--footer" href="#top" aria-label="AZUMAMARU トップへ戻る"><span class="brand__jp">東丸</span><span class="brand__en">AZUMAMARU</span></a>
+      <nav class="footer-nav" aria-label="フッターナビゲーション"><a href="#schedule">出船予定</a><a href="#catch">釣果</a><a href="#first-timer">はじめての方へ</a><a href="#boat">船について</a><a href="reservation.html">ご予約</a></nav>
       <p class="footer-note">© 2026 AZUMAMARU — ROUGH CONCEPT / DEMO SITE ・ 実在の店舗・船・予約情報とは関係ありません</p>
     </div>
   </footer>
