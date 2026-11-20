@@ -4,24 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b1113">
-  <title>空席確認・予約｜東丸 AZUMAMARU</title>
+  <title>予約画面デモ｜東丸 AZUMAMARU</title><meta name="robots" content="noindex,nofollow">
   <meta name="description" content="東丸（あずままる）の空席確認・予約ページ。出船日、プラン、人数、連絡先を分かりやすく入力できる予約画面です。">
   <link rel="stylesheet" href="rough-style.css">
-  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="booking.css"><link rel="stylesheet" href="azuma-pages.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
-<body class="booking-page">
-  <header class="booking-header">
-    <a class="brand" href="index.html" aria-label="東丸トップへ"><span class="brand__jp">東丸</span><span class="brand__en">AZUMAMARU</span></a>
-    <a class="booking-back" href="index.html">トップへ戻る</a>
-  </header>
+<body class="booking-page subpage">
+  <header class="site-header is-visible" id="siteHeader"><div class="site-header__inner"><a class="brand" href="index.html" aria-label="東丸トップへ"><span class="brand__jp">東丸</span><span class="brand__en">AZUMAMARU</span></a><nav class="site-nav" aria-label="メインナビゲーション"><a href="plans.html">乗船プラン</a><a href="catches.html">釣果情報</a><a href="guide.html">はじめての方</a><a href="access.html">アクセス</a></nav><div class="site-header__actions"><a class="header-cta" href="reservation.html">予約案内</a><button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navOverlay" aria-label="メニューを開く"><span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span></button></div></div></header>
+<nav id="navOverlay" class="nav-overlay" aria-label="サイトナビゲーション" aria-hidden="true" inert><div class="nav-overlay__inner"><p class="nav-overlay__label">AZUMAMARU / NAVIGATION</p><ol class="nav-overlay__list"><li><a href="index.html"><span class="nav-overlay__num">01</span>トップ</a></li><li><a href="plans.html"><span class="nav-overlay__num">02</span>乗船プラン</a></li><li><a href="catches.html"><span class="nav-overlay__num">03</span>釣果情報</a></li><li><a href="guide.html"><span class="nav-overlay__num">04</span>はじめての方</a></li><li><a href="access.html"><span class="nav-overlay__num">05</span>アクセス</a></li><li><a href="reservation.html"><span class="nav-overlay__num">06</span>ご予約（準備中）</a></li></ol></div></nav>
+
 
   <main>
     <section class="booking-hero">
       <p class="eyebrow">RESERVATION / AZUMAMARU</p>
-      <h1>空席確認・<br>ご予約。</h1>
-      <p>迷わず、最短で。必要な情報だけを順番に入力できる予約画面です。</p>
-      <div class="demo-banner"><b>DEMO</b><span>現在は画面確認用です。入力内容は送信されません。</span></div>
+      <h1>ご予約<span class="az-hero-dot">。</span></h1>
+      <p>乗船日や希望内容を選び、予約まで迷わず進めるための画面を開発しています。</p>
+      <div class="demo-banner"><b>DEMO</b><span>本ページはデモです。予約受付・空席確保・送信・決済は行われません。</span></div>
     </section>
 
     <section class="booking-shell" aria-labelledby="booking-title">
@@ -73,12 +72,13 @@
     </section>
   </main>
 
-  <footer class="booking-footer"><a class="brand" href="index.html"><span class="brand__jp">東丸</span><span class="brand__en">AZUMAMARU</span></a><p>© 2026 AZUMAMARU</p></footer>
+  <footer class="site-footer"><div class="site-footer__inner"><a class="brand" href="index.html" aria-label="東丸トップへ"><span class="brand__jp">東丸</span><span class="brand__en">AZUMAMARU</span></a><nav class="footer-nav" aria-label="フッターナビ"><a href="index.html">トップ</a><a href="plans.html">乗船プラン</a><a href="catches.html">釣果情報</a><a href="guide.html">はじめての方</a><a href="access.html">アクセス</a><a href="reservation.html">ご予約（準備中）</a></nav><p class="footer-note">© 2026 AZUMAMARU / 東丸　※現在は公開準備用のデモサイトです。出船・予約受付・料金は未確定です。</p></div></footer>
+
   <script>
     document.getElementById('bookingForm').addEventListener('submit', function (event) {
       event.preventDefault();
       document.getElementById('bookingStatus').textContent = '現在はデモ画面です。本番予約の送信機能は準備中です。';
     });
   </script>
-</body>
+<script defer src="rough-script.js"></script></body>
 </html>

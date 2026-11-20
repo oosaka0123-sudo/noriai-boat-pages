@@ -1,0 +1,42 @@
+name: AZUMAMARU dedicated boat site verification
+on:
+  push:
+    branches:
+      - feat/azumamaru-independent-site-20261120
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate site navigation and independent branding
+        run: node tests/check-azumamaru.cjs
+      - name: Lint JavaScript
+        run: |
+          for js in rough-script.js catches.js; do node --check "$js"; done
+      - name: Lint PHP
+        run: php -l api/catches.php
+      - name: Package Lolipop site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          zip -q -r dist/azumamaru-lolipop.zip \
+            index.html catches.html reservation.html plans.html guide.html access.html \
+            rough-style.css azuma-pages.css booking.css rough-script.js catches.js \
+            media api .htaccess robots.txt
+          unzip -Z1 dist/azumamaru-lolipop.zip > dist/manifest.txt
+          for file in index.html api/catches.php api/data/.htaccess media/hero-boat.mp4; do
+            grep -Fxq "$file" dist/manifest.txt
+          done
+          if grep -E 'config\.local\.php|secret|token|catches\.json' dist/manifest.txt; then
+            echo 'Private or unverified data in ZIP'; exit 1
+          fi
+      - name: Attach staging ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: azumamaru-lolipop-staging-zip
+          path: dist/azumamaru-lolipop.zip
+          retention-days: 7

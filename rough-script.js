@@ -8,7 +8,7 @@
   var HEADER_THRESHOLD = 90;
 
   function updateHeader() {
-    if (window.scrollY > HEADER_THRESHOLD) {
+    if (document.body.classList.contains('subpage') || window.scrollY > HEADER_THRESHOLD) {
       header.classList.add('is-visible');
     } else {
       header.classList.remove('is-visible');
